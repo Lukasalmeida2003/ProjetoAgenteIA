@@ -4,7 +4,7 @@ import { Sparkles, BrainCircuit } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Especialistas prontos para trabalhar por você.";
+  const fullText = " Especialistas prontos para trabalhar por você.";
   
   useEffect(() => {
     let i = 0;
