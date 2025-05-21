@@ -11,13 +11,11 @@ const PricingCard: React.FC = () => {
   
   const features = [
     "15 Agentes Prontos para uso",
-    "Atualizações vitalícias",
     "Ativação com 1 clique",
     "Suporte prioritário",
     "Compatível com ChatGPT 3.5 e GPT-4",
-    "Agentes personalizados ilimitados",
     "Integrações com outras IAs",
-    "Acesso a novas versões antes"
+    "Agentes ajustados para uso estratégico"
   ];
   
   return (
