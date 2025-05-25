@@ -36,7 +36,7 @@ const CallToAction: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Você está a um clique de ter{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              69 especialistas
+              15 especialistas
             </span>
             {" "}digitais prontos para trabalhar por você
           </h2>

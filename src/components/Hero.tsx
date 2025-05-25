@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           >
             Transforme Seu ChatGPT em{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              69 Especialistas
+              15 Especialistas
             </span>
             {" "}em Apenas 1 Minuto
           </motion.h1>
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
               className="rounded-lg shadow-2xl border border-gray-800 max-w-full mx-auto"
             />
             <div className="absolute -top-4 -left-4 h-16 w-16 bg-secondary rounded-full flex items-center justify-center animate-float">
-              <span className="font-bold text-xl">69x</span>
+              <span className="font-bold text-xl">15x</span>
             </div>
           </motion.div>
         </motion.div>
