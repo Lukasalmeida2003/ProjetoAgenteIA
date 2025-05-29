@@ -46,11 +46,11 @@ const PricingCard: React.FC = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Pacote Completo</h3>
-                    <p className="text-gray-400">Equivalente a R$1,26 por dia</p>
+                    <p className="text-gray-400">Equivalente a R$1,23 por dia</p>
                   </div>
                   <div className="mt-4 md:mt-0">
                     <div className="text-4xl font-bold">
-                      R$ <span className="text-primary">37,90</span>
+                      R$ <span className="text-primary">37,00</span>
                       <span className="text-gray-400 text-xl ml-1">única vez</span>
                     </div>
                   </div>
@@ -71,14 +71,17 @@ const PricingCard: React.FC = () => {
                   </ul>
                 </div>
                 
-                <motion.button
+                <motion.a
+                  href="https://app.disruptybr.com.br/products/view/sintqljos0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="w-full py-4 rounded-lg font-semibold text-lg flex items-center justify-center bg-gradient-to-r from-primary to-secondary text-background-dark"
                 >
                   Ativar Agora
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </motion.button>
+                </motion.a>
                 
                 <p className="text-center text-gray-400 text-sm mt-4">
                   Pagamento único. Sem assinatura. Garantia de satisfação de 7 dias.

@@ -46,22 +46,26 @@ const CallToAction: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <motion.button
+            <motion.a
+              href="https://app.disruptybr.com.br/products/view/sintqljos0"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-primary to-secondary text-background-dark font-semibold py-4 px-8 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center w-full sm:w-auto justify-center"
             >
               Ativar Agora
               <ArrowRight className="ml-2 h-5 w-5" />
-            </motion.button>
+            </motion.a>
             
-            <motion.button
+            <motion.a
+              href="#benefícios"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-transparent border border-primary text-white font-semibold py-4 px-8 rounded-lg hover:bg-primary/10 transition-all duration-300 w-full sm:w-auto"
             >
               Saiba Mais
-            </motion.button>
+            </motion.a>
           </div>
           
           <p className="mt-8 text-gray-400">
