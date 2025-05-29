@@ -77,10 +77,13 @@ const Hero: React.FC = () => {
             className="relative inline-block"
           >
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary to-secondary blur opacity-30 animate-pulse-slow"></div>
-            <button className="relative bg-background-dark text-white py-4 px-8 rounded-lg font-semibold text-lg border border-primary hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center">
+            <a 
+              href="#preços"
+              className="relative bg-background-dark text-white py-4 px-8 rounded-lg font-semibold text-lg border border-primary hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center"
+            >
               <Sparkles className="mr-2 h-5 w-5" />
               Quero Ativar Meus Agentes
-            </button>
+            </a>
           </motion.div>
           
           <motion.div 

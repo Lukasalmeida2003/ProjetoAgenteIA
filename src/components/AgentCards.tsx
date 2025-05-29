@@ -180,9 +180,12 @@ const AgentCards: React.FC = () => {
               <p className="text-gray-400 mb-4">
                 {agent.description}
               </p>
-              <button className="w-full py-2 px-4 bg-background-dark border border-primary text-primary rounded-lg hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center justify-center space-x-2">
+              <a 
+                href="#preços"
+                className="w-full py-2 px-4 bg-background-dark border border-primary text-primary rounded-lg hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center justify-center space-x-2"
+              >
                 <span>Ativar no ChatGPT</span>
-              </button>
+              </a>
             </motion.div>
           ))}
         </motion.div>

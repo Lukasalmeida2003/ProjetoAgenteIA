@@ -186,14 +186,15 @@ const Demonstration: React.FC = () => {
         </div>
         
         <div className="text-center mt-16">
-          <motion.button
+          <motion.a
+            href="#preços"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-primary text-background-dark font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-flex items-center"
           >
             Experimentar Agora
             <ArrowRight className="ml-2 h-5 w-5" />
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </section>
