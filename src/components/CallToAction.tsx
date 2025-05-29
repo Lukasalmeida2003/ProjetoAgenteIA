@@ -47,7 +47,7 @@ const CallToAction: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <motion.a
-              href="https://app.disruptybr.com.br/products/view/sintqljos0"
+              href="https://go.disruptybr.shop/escbpcnlgw"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
