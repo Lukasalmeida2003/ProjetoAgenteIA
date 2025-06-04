@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, BrainCircuit } from 'lucide-react';
+import { BrainCircuit } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
@@ -70,20 +70,6 @@ const Hero: React.FC = () => {
             <p className="text-xl text-gray-300 inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary">
               {typedText}
             </p>
-          </motion.div>
-          
-          <motion.div 
-            variants={item}
-            className="relative inline-block"
-          >
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary to-secondary blur opacity-30 animate-pulse-slow"></div>
-            <a 
-              href="#preços"
-              className="relative bg-background-dark text-white py-4 px-8 rounded-lg font-semibold text-lg border border-primary hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center"
-            >
-              <Sparkles className="mr-2 h-5 w-5" />
-              Quero Ativar Meus Agentes
-            </a>
           </motion.div>
           
           <motion.div 
