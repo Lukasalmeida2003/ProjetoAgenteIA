@@ -216,7 +216,7 @@ const WhatYouGet: React.FC = () => {
         >
           <div className="bg-background-light/50 backdrop-blur-sm rounded-xl p-8 border border-accent/20">
             <h3 className="text-2xl font-bold mb-4">
-              Tudo isso por apenas <span className="text-accent">R$ 37,00</span>
+              Tudo isso por apenas <span className="text-accent">R$ 47,00</span>
             </h3>
             <p className="text-gray-300 mb-6">
               Investimento único. Sem mensalidades. Acesso imediato.
