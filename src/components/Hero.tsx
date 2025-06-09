@@ -4,7 +4,7 @@ import { BrainCircuit, Zap, Target, Clock } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "seem pensar, sem errar, sem enrolar.";
+  const fullText = "Sem pensar, sem errar, sem enrolar.";
   
   useEffect(() => {
     let i = 0;
