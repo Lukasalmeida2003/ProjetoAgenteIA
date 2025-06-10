@@ -4,7 +4,7 @@ import { BrainCircuit } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "15 agentes prontos pra executar com exatidão o que você precisa — sem pensar, sem errar, sem enrolar.";
+  const fullText = "155 agentes prontos pra executar com exatidão o que você precisa — sem pensar, sem errar, sem enrolar.";
   
   useEffect(() => {
     let i = 0;
