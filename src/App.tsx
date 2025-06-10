@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import UserIdentification from './components/UserIdentification';
 import AgentCards from './components/AgentCards';
 import Dashboard from './components/Dashboard';
 import Demonstration from './components/Demonstration';
@@ -18,7 +17,6 @@ function App() {
       <ParticleBackground />
       <Navbar />
       <Hero />
-      <UserIdentification />
       <AgentCards />
       <Dashboard />
       <Demonstration />
