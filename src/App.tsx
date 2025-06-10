@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from './components/Hero';
 import PanelShowcase from './components/PanelShowcase';
 import ValueStack from './components/ValueStack';
-import AgentCards from './components/AgentCards';
 import Dashboard from './components/Dashboard';
 import Demonstration from './components/Demonstration';
 import Benefits from './components/Benefits';
@@ -22,7 +21,6 @@ function App() {
       <Hero />
       <PanelShowcase />
       <ValueStack />
-      <AgentCards />
       <Dashboard />
       <Demonstration />
       <Benefits />
