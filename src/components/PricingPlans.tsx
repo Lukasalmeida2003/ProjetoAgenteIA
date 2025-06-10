@@ -24,7 +24,7 @@ const PricingPlans: React.FC = () => {
       ],
       buttonText: "Começar com START",
       buttonColor: "bg-gray-600 hover:bg-gray-500",
-      buttonLink: "https://painelagentes.ia/start",
+      buttonLink: "https://go.disruptybr.com.br/unqvx",
       icon: <Zap className="w-6 h-6" />
     },
     {
@@ -41,7 +41,7 @@ const PricingPlans: React.FC = () => {
       ],
       buttonText: "Quero o PRO completo",
       buttonColor: "bg-accent hover:bg-accent/90",
-      buttonLink: "https://painelagentes.ia/pro",
+      buttonLink: "https://go.disruptybr.com.br/escbpcnlgw",
       icon: <Star className="w-6 h-6" />
     },
     {
@@ -58,7 +58,7 @@ const PricingPlans: React.FC = () => {
       ],
       buttonText: "Sou MASTER. Acesso vitalício",
       buttonColor: "bg-gradient-to-r from-primary to-accent hover:opacity-90",
-      buttonLink: "https://painelagentes.ia/master",
+      buttonLink: "https://go.disruptybr.com.br/3966g",
       icon: <Crown className="w-6 h-6" />
     }
   ];
