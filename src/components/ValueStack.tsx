@@ -235,7 +235,7 @@ const ValueStack: React.FC = () => {
               }}
               className="absolute -top-6 -left-6 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
             >
-              Valor: R$ 497
+              Valor: R$ 97
             </motion.div>
 
             <motion.div

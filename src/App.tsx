@@ -6,6 +6,7 @@ import AgentCards from './components/AgentCards';
 import Dashboard from './components/Dashboard';
 import Demonstration from './components/Demonstration';
 import Benefits from './components/Benefits';
+import Guarantee from './components/Guarantee';
 import PricingCard from './components/PricingCard';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -25,6 +26,7 @@ function App() {
       <Dashboard />
       <Demonstration />
       <Benefits />
+      <Guarantee />
       <PricingCard />
       <Testimonials />
       <FAQ />
