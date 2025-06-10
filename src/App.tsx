@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
+import PanelShowcase from './components/PanelShowcase';
 import AgentCards from './components/AgentCards';
 import Dashboard from './components/Dashboard';
 import Demonstration from './components/Demonstration';
@@ -17,6 +18,7 @@ function App() {
       <ParticleBackground />
       <Navbar />
       <Hero />
+      <PanelShowcase />
       <AgentCards />
       <Dashboard />
       <Demonstration />
