@@ -4,7 +4,7 @@ import { BrainCircuit } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "­EEspecialistas prontos para trabalhar por você.";
+  const fullText = "15 agentes prontos pra executar com exatidão o que você precisa — sem pensar, sem errar, sem enrolar.";
   
   useEffect(() => {
     let i = 0;
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" id="início">
       <div className="container mx-auto px-4 md:px-6 z-10">
         <motion.div 
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-5xl mx-auto"
           variants={container}
           initial="hidden"
           animate="show"
@@ -54,20 +54,31 @@ const Hero: React.FC = () => {
           
           <motion.h1 
             variants={item}
-            className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-bold mb-8 leading-tight"
           >
-            Transforme Seu ChatGPT em{" "}
+            Você ainda usa o ChatGPT{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              15 Especialistas
+              digitando prompts no chute?
             </span>
-            {" "}em Apenas 1 Minuto
           </motion.h1>
           
           <motion.div 
             variants={item}
-            className="h-8 mb-8"
+            className="mb-12"
           >
-            <p className="text-xl text-gray-300 inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary">
+            <p className="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
+              Você está desperdiçando tempo, resultados e oportunidades.
+            </p>
+            <p className="text-lg md:text-xl text-gray-400 mb-4">
+              Conheça o <span className="text-primary font-semibold">Painel de Agentes Inteligentes:</span>
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            variants={item}
+            className="h-16 mb-12"
+          >
+            <p className="text-lg md:text-xl text-gray-300 inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary">
               {typedText}
             </p>
           </motion.div>
