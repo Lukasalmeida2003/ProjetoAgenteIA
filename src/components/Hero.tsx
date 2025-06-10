@@ -100,23 +100,12 @@ const Hero: React.FC = () => {
                 </div>
               </motion.div>
               
-              {/* CTA Button */}
+              {/* Information without CTA */}
               <motion.div 
                 variants={item}
                 className="pt-4 flex flex-col items-center lg:items-start"
               >
-                <motion.a
-                  href="https://go.disruptybr.shop/escbpcnlgw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(253, 216, 53, 0.3)" }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-block bg-gradient-to-r from-accent to-primary text-background-dark font-bold text-xl px-12 py-6 rounded-lg shadow-2xl hover:shadow-accent/30 transition-all duration-300"
-                >
-                  Quero acessar agora
-                </motion.a>
-                
-                <p className="text-gray-400 text-sm mt-4 text-center lg:text-left">
+                <p className="text-gray-400 text-sm text-center lg:text-left">
                   ✓ Acesso imediato • ✓ Garantia de 7 dias • ✓ Suporte incluído
                 </p>
                 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ArrowRight, Rocket, Clock, Zap } from 'lucide-react';
+import { Rocket, Clock, Zap } from 'lucide-react';
 
 const FinalCTA: React.FC = () => {
   const { ref, inView } = useInView({
@@ -90,44 +90,12 @@ const FinalCTA: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Main CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="mb-8"
-          >
-            <motion.a
-              href="https://go.disruptybr.shop/escbpcnlgw"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 25px 50px rgba(253, 216, 53, 0.4)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-block bg-gradient-to-r from-accent to-primary text-background-dark font-bold text-2xl px-16 py-6 rounded-2xl shadow-2xl hover:shadow-accent/40 transition-all duration-300 relative overflow-hidden"
-            >
-              <span className="relative z-10 flex items-center">
-                Quero meu painel agora
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </span>
-              
-              {/* Pulsing effect */}
-              <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute inset-0 bg-white/20 rounded-2xl"
-              />
-            </motion.a>
-          </motion.div>
-
           {/* Final Guarantee */}
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            className="text-gray-400 text-lg"
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-gray-400 text-lg mb-8"
           >
             ✓ Garantia de 7 dias • ✓ Acesso imediato • ✓ Suporte incluído
           </motion.p>
@@ -136,8 +104,8 @@ const FinalCTA: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            className="mt-12 bg-background-dark/50 backdrop-blur-sm rounded-xl p-6 border border-accent/20 max-w-2xl mx-auto"
+            transition={{ duration: 0.6, delay: 1 }}
+            className="bg-background-dark/50 backdrop-blur-sm rounded-xl p-6 border border-accent/20 max-w-2xl mx-auto"
           >
             <p className="text-accent font-semibold mb-2">⚡ Oferta por tempo limitado</p>
             <p className="text-gray-300 text-sm">
