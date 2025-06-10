@@ -128,7 +128,11 @@ const PricingPlans: React.FC = () => {
 
               <div className="text-center mb-8">
                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 ${
-                  plan.popular ? 'bg-accent text-background-dark' : 'bg-background-dark text-gray-400'
+                  plan.name === 'MASTER' 
+                    ? 'bg-gradient-to-r from-primary to-accent text-background-dark' 
+                    : plan.popular 
+                      ? 'bg-accent text-background-dark' 
+                      : 'bg-background-dark text-gray-400'
                 }`}>
                   {plan.icon}
                 </div>
@@ -158,7 +162,7 @@ const PricingPlans: React.FC = () => {
                 whileTap={{ scale: 0.98 }}
                 className={`w-full py-4 rounded-lg font-semibold text-center flex items-center justify-center transition-all duration-300 ${
                   plan.buttonColor
-                } ${plan.popular ? 'text-background-dark' : 'text-white'}`}
+                } ${plan.popular || plan.name === 'MASTER' ? 'text-background-dark' : 'text-white'}`}
               >
                 {plan.buttonText}
                 <ArrowRight className="ml-2 h-5 w-5" />
