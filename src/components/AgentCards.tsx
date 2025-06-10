@@ -13,11 +13,7 @@ import {
   Target,
   Lightbulb,
   Users,
-  Zap,
-  Heart,
-  DollarSign,
-  Camera,
-  Dumbbell
+  Zap
 } from 'lucide-react';
 
 interface Agent {
@@ -26,9 +22,6 @@ interface Agent {
   title: string;
   description: string;
   category: string;
-  borderColor: string;
-  iconBg: string;
-  accentColor: string;
 }
 
 const AgentCards: React.FC = () => {
@@ -43,60 +36,42 @@ const AgentCards: React.FC = () => {
       icon: <Video className="h-6 w-6" />, 
       title: "Explosão no TikTok", 
       description: "Roteiros virais prontos",
-      category: "Social Media",
-      borderColor: "border-pink-500/50",
-      iconBg: "bg-pink-500/20",
-      accentColor: "text-pink-400"
+      category: "Social Media"
     },
     { 
       id: 2, 
       icon: <MessageSquareText className="h-6 w-6" />, 
       title: "Copy que Vende", 
       description: "Anúncios, e-mails e VSL",
-      category: "Marketing",
-      borderColor: "border-accent/50",
-      iconBg: "bg-accent/20",
-      accentColor: "text-accent"
+      category: "Marketing"
     },
     { 
       id: 3, 
       icon: <GraduationCap className="h-6 w-6" />, 
       title: "TCC & Estudo", 
       description: "Resumos, redações e explicações",
-      category: "Educação",
-      borderColor: "border-blue-500/50",
-      iconBg: "bg-blue-500/20",
-      accentColor: "text-blue-400"
+      category: "Educação"
     },
     { 
       id: 4, 
       icon: <Briefcase className="h-6 w-6" />, 
       title: "Marca Pessoal no LinkedIn", 
       description: "Bio e posicionamento",
-      category: "Profissional",
-      borderColor: "border-primary/50",
-      iconBg: "bg-primary/20",
-      accentColor: "text-primary"
+      category: "Profissional"
     },
     { 
       id: 5, 
       icon: <Brain className="h-6 w-6" />, 
       title: "Mindset & Foco", 
       description: "Produtividade guiada por IA",
-      category: "Desenvolvimento",
-      borderColor: "border-purple-500/50",
-      iconBg: "bg-purple-500/20",
-      accentColor: "text-purple-400"
+      category: "Desenvolvimento"
     },
     { 
       id: 6, 
       icon: <BookHeart className="h-6 w-6" />, 
       title: "Fé Diária", 
       description: "Orações e reflexões personalizadas",
-      category: "Espiritualidade",
-      borderColor: "border-green-500/50",
-      iconBg: "bg-green-500/20",
-      accentColor: "text-green-400"
+      category: "Espiritualidade"
     }
   ];
 
@@ -158,24 +133,24 @@ const AgentCards: React.FC = () => {
                 scale: 1.02,
                 boxShadow: "0 20px 40px rgba(253, 216, 53, 0.2)"
               }}
-              className={`group relative bg-gradient-to-br from-background-light to-background-dark rounded-xl p-8 border-2 ${agent.borderColor} hover:border-opacity-100 transition-all duration-300 cursor-pointer overflow-hidden`}
+              className="group relative bg-gradient-to-br from-background-light to-background-dark rounded-xl p-8 border border-gray-800 hover:border-accent/50 transition-all duration-300 cursor-pointer overflow-hidden"
             >
               {/* Background glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               {/* Category badge */}
-              <div className={`absolute top-4 right-4 ${agent.iconBg} ${agent.accentColor} text-xs px-2 py-1 rounded-full border ${agent.borderColor}`}>
+              <div className="absolute top-4 right-4 bg-accent/20 text-accent text-xs px-2 py-1 rounded-full">
                 {agent.category}
               </div>
               
               <div className="relative z-10">
-                <div className={`mb-6 ${agent.iconBg} p-4 rounded-xl inline-block group-hover:scale-110 transition-transform duration-300 border ${agent.borderColor}`}>
-                  <div className={`${agent.accentColor} transition-colors duration-300`}>
+                <div className="mb-6 bg-background-dark/60 p-4 rounded-xl inline-block group-hover:bg-accent/20 transition-colors duration-300">
+                  <div className="text-accent group-hover:text-accent transition-colors duration-300">
                     {agent.icon}
                   </div>
                 </div>
                 
-                <h3 className={`text-xl font-bold mb-3 group-hover:${agent.accentColor} transition-colors duration-300`}>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors duration-300">
                   {agent.title}
                 </h3>
                 
@@ -183,7 +158,7 @@ const AgentCards: React.FC = () => {
                   {agent.description}
                 </p>
                 
-                <div className={`flex items-center ${agent.accentColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                <div className="flex items-center text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-sm font-semibold">Ativar Agente</span>
                   <Zap className="w-4 h-4 ml-2" />
                 </div>
@@ -207,19 +182,12 @@ const AgentCards: React.FC = () => {
             Afiliado Pro, Controle Emocional, Nutrição e muito mais...
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: 'Relacionamentos', icon: <Heart className="w-4 h-4" />, color: 'bg-pink-500/20 text-pink-400 border-pink-500/50' },
-              { name: 'Finanças', icon: <DollarSign className="w-4 h-4" />, color: 'bg-green-500/20 text-green-400 border-green-500/50' },
-              { name: 'Saúde', icon: <Dumbbell className="w-4 h-4" />, color: 'bg-red-500/20 text-red-400 border-red-500/50' },
-              { name: 'Negócios', icon: <TrendingUp className="w-4 h-4" />, color: 'bg-blue-500/20 text-blue-400 border-blue-500/50' },
-              { name: 'Educação', icon: <Lightbulb className="w-4 h-4" />, color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' }
-            ].map((tag, index) => (
+            {['Relacionamentos', 'Finanças', 'Saúde', 'Negócios', 'Educação'].map((tag, index) => (
               <span 
                 key={index}
-                className={`${tag.color} px-4 py-2 rounded-full text-sm font-medium border flex items-center space-x-2`}
+                className="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium"
               >
-                {tag.icon}
-                <span>{tag.name}</span>
+                {tag}
               </span>
             ))}
           </div>
