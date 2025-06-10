@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { BrainCircuit } from 'lucide-react';
+import { Sparkles, BrainCircuit } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "155 agentes prontos pra executar com exatidão o que você precisa — sem pensar, sem errar, sem enrolar.";
+  const fullText = "­EEspecialistas prontos para trabalhar por você.";
   
   useEffect(() => {
     let i = 0;
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" id="início">
       <div className="container mx-auto px-4 md:px-6 z-10">
         <motion.div 
-          className="text-center max-w-5xl mx-auto"
+          className="text-center max-w-4xl mx-auto"
           variants={container}
           initial="hidden"
           animate="show"
@@ -54,33 +54,36 @@ const Hero: React.FC = () => {
           
           <motion.h1 
             variants={item}
-            className="text-4xl md:text-6xl font-bold mb-8 leading-tight"
+            className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
           >
-            Você ainda usa o ChatGPT{" "}
+            Transforme Seu ChatGPT em{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              digitando prompts no chute?
+              15 Especialistas
             </span>
+            {" "}em Apenas 1 Minuto
           </motion.h1>
           
           <motion.div 
             variants={item}
-            className="mb-12"
+            className="h-8 mb-8"
           >
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
-              Você está desperdiçando tempo, resultados e oportunidades.
-            </p>
-            <p className="text-lg md:text-xl text-gray-400 mb-4">
-              Conheça o <span className="text-primary font-semibold">Painel de Agentes Inteligentes:</span>
+            <p className="text-xl text-gray-300 inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary">
+              {typedText}
             </p>
           </motion.div>
           
           <motion.div 
             variants={item}
-            className="h-16 mb-12"
+            className="relative inline-block"
           >
-            <p className="text-lg md:text-xl text-gray-300 inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary">
-              {typedText}
-            </p>
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary to-secondary blur opacity-30 animate-pulse-slow"></div>
+            <a 
+              href="#preços"
+              className="relative bg-background-dark text-white py-4 px-8 rounded-lg font-semibold text-lg border border-primary hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center"
+            >
+              <Sparkles className="mr-2 h-5 w-5" />
+              Quero Ativar Meus Agentes
+            </a>
           </motion.div>
           
           <motion.div 
