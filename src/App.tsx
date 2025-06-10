@@ -1,11 +1,13 @@
 import React from 'react';
 import Hero from './components/Hero';
-import ProofInAction from './components/ProofInAction';
 import AgentCards from './components/AgentCards';
-import WhatYouGet from './components/WhatYouGet';
-import PricingPlans from './components/PricingPlans';
-import Guarantee from './components/Guarantee';
-import FinalCTA from './components/FinalCTA';
+import Dashboard from './components/Dashboard';
+import Demonstration from './components/Demonstration';
+import Benefits from './components/Benefits';
+import PricingCard from './components/PricingCard';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import CallToAction from './components/CallToAction';
 import Navbar from './components/Navbar';
 import ParticleBackground from './components/ParticleBackground';
 
@@ -15,12 +17,14 @@ function App() {
       <ParticleBackground />
       <Navbar />
       <Hero />
-      <ProofInAction />
       <AgentCards />
-      <WhatYouGet />
-      <PricingPlans />
-      <Guarantee />
-      <FinalCTA />
+      <Dashboard />
+      <Demonstration />
+      <Benefits />
+      <PricingCard />
+      <Testimonials />
+      <FAQ />
+      <CallToAction />
     </div>
   );
 }

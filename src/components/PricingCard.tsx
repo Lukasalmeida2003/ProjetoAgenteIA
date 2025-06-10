@@ -46,11 +46,11 @@ const PricingCard: React.FC = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Pacote Completo</h3>
-                    <p className="text-gray-400">Equivalente a R$1,23 por dia</p>
+                    <p className="text-gray-400">Equivalente a R$0,66 por dia</p>
                   </div>
                   <div className="mt-4 md:mt-0">
                     <div className="text-4xl font-bold">
-                      R$ <span className="text-primary">37,00</span>
+                      R$ <span className="text-primary">19,90</span>
                       <span className="text-gray-400 text-xl ml-1">única vez</span>
                     </div>
                   </div>
