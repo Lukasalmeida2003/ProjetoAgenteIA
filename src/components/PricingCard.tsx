@@ -24,7 +24,7 @@ const PricingCard: React.FC = () => {
         "Atualizações por 3 meses"
       ],
       popular: false,
-      link: "https://go.disruptybr.shop/escbpcnlgw"
+      link: "https://go.disruptybr.com.br/unqvx"
     },
     {
       name: "Profissional",
@@ -42,7 +42,7 @@ const PricingCard: React.FC = () => {
         "Comunidade exclusiva"
       ],
       popular: true,
-      link: "https://go.disruptybr.shop/escbpcnlgw"
+      link: "https://go.disruptybr.com.br/escbpcnlgw"
     },
     {
       name: "Premium",
@@ -61,7 +61,7 @@ const PricingCard: React.FC = () => {
         "Certificado de conclusão"
       ],
       popular: false,
-      link: "https://go.disruptybr.shop/escbpcnlgw"
+      link: "https://go.disruptybr.com.br/3966g"
     }
   ];
   
