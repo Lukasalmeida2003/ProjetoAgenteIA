@@ -96,9 +96,17 @@ const WhatYouGet: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            className="text-xl text-gray-300 max-w-3xl mx-auto mb-4"
           >
             Um pacote completo com 15 agentes otimizados, criados para gerar resultado com 1 clique.
+          </motion.p>
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-lg text-accent max-w-4xl mx-auto leading-relaxed font-medium"
+          >
+            Você não está só comprando um painel. Está desbloqueando uma nova forma de usar IA — prática, simples e poderosa.
           </motion.p>
         </div>
 

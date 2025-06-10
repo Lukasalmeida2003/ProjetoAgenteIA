@@ -119,6 +119,16 @@ const Hero: React.FC = () => {
                 <p className="text-gray-400 text-sm mt-4 text-center lg:text-left">
                   ✓ Acesso imediato • ✓ Garantia de 7 dias • ✓ Suporte incluído
                 </p>
+                
+                {/* New immediate access line */}
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.5, duration: 0.6 }}
+                  className="text-accent text-lg mt-3 text-center lg:text-left font-medium"
+                >
+                  → Receba acesso imediato. Em menos de 3 minutos você já estará operando sua IA.
+                </motion.p>
               </motion.div>
             </motion.div>
             
